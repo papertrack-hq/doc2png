@@ -1,0 +1,46 @@
+{
+  "name": "doc2png",
+  "version": "0.1.0",
+  "description": "Render any document (PDF, DOCX, PPTX, XLSX, TXT, CSV, images) to page-by-page PNG images.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"no tests yet\" && exit 0"
+  },
+  "keywords": [
+    "pdf",
+    "docx",
+    "pptx",
+    "xlsx",
+    "document-rendering",
+    "page-renderer",
+    "thumbnail",
+    "preview",
+    "mupdf"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/papertrack-hq/doc2png.git"
+  },
+  "homepage": "https://github.com/papertrack-hq/doc2png#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "mammoth": "^1.8.0",
+    "mupdf": "^1.0.0",
+    "pdf-lib": "^1.17.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
